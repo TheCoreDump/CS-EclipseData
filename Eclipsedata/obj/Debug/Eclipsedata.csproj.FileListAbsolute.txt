@@ -1,0 +1,6 @@
+C:\Dev\Projects\Eclipsedata\Eclipsedata\bin\Debug\Eclipsedata.exe.config
+C:\Dev\Projects\Eclipsedata\Eclipsedata\bin\Debug\Eclipsedata.exe
+C:\Dev\Projects\Eclipsedata\Eclipsedata\bin\Debug\Eclipsedata.pdb
+C:\Dev\Projects\Eclipsedata\Eclipsedata\obj\Debug\Eclipsedata.csprojResolveAssemblyReference.cache
+C:\Dev\Projects\Eclipsedata\Eclipsedata\obj\Debug\Eclipsedata.exe
+C:\Dev\Projects\Eclipsedata\Eclipsedata\obj\Debug\Eclipsedata.pdb
