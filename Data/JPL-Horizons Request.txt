@@ -1,0 +1,60 @@
+!$$SOF
+! Eclipse Data - JPL DE405 https://eclipse.gsfc.nasa.gov/SEpath/de405-predictions.html
+!  Summary: https://eclipse.gsfc.nasa.gov/SEplot/SEplot2001/SE2017Aug21T.GIF
+!  Main Page: https://eclipse.gsfc.nasa.gov/SEgoogle/SEgoogle2001/SE2017Aug21Tgoogle.html
+!
+! Lunar Constants: k1 = 0.272508 (Penumbra)
+!                  k2 = 0.272281 (Umbra)
+
+EMAIL_ADDR = 'pjburrous@hotmail.com' 
+
+! Sun = 10
+! Earth = 399
+! Moon = 301
+
+! Get data about the Sun
+COMMAND='399'
+
+OBJ_DATA='YES'
+MAKE_EPHEM='YES'
+TABLE_TYPE='OBSERVER'
+
+
+! Hopkinsville, KY Viewing Location:
+! 36.816638, -87.500917
+! 36° 48' 59.8968" N   87° 30' 3.3012" W
+! Elevation: 525.5 feet 
+!            160.1724 meters
+
+! CENTER='Geocentric' Earth center
+
+! Center of the sun
+CENTER='g@10'
+
+
+! Penumbra Contact Times:
+!   Start: 15:46:51.5 UT
+!   End: 21:04:23.5 UT
+
+! Umbra Contact Times:
+!   Start: 16:48:36.1 UT
+!   End: 20:02:34.4 UT
+!
+
+!  Delta T: 68.4s
+!   (Delta T = TD - UT)
+
+
+START_TIME = '2017-AUG-21 15:00 UT'
+STOP_TIME = '2017-AUG-21 22:00 UT'
+
+STEP_SIZE  = '1 min'
+
+! Determine what quantities to return
+QUANTITIES = 'A'
+
+! Set the output to 
+RANGE_UNITS = 'KM'
+
+
+!$$EOF
