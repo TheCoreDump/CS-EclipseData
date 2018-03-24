@@ -9,7 +9,7 @@ namespace Eclipsedata
         {
         }
 
-        public Sphere(Point3D center, double radius)
+        public Sphere(Point3D center, decimal radius)
         {
             Center = center;
             Radius = radius;
@@ -17,6 +17,6 @@ namespace Eclipsedata
 
         public Point3D Center { get; set; }
 
-        public double Radius { get; set; }
+        public decimal Radius { get; set; }
     }
 }

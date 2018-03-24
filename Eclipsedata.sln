@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eclipsedata", "Eclipsedata\Eclipsedata.csproj", "{5D8A6868-6647-41AB-BE13-4FA84DF6E97F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataFileParser", "DataFileParser\DataFileParser.csproj", "{A2BDA719-3C14-474F-B36A-9BF98FE6BE22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{5D8A6868-6647-41AB-BE13-4FA84DF6E97F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D8A6868-6647-41AB-BE13-4FA84DF6E97F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D8A6868-6647-41AB-BE13-4FA84DF6E97F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2BDA719-3C14-474F-B36A-9BF98FE6BE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2BDA719-3C14-474F-B36A-9BF98FE6BE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2BDA719-3C14-474F-B36A-9BF98FE6BE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2BDA719-3C14-474F-B36A-9BF98FE6BE22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {236D2ABC-E4A4-4049-83F7-FBB047F50EA4}
 	EndGlobalSection
 EndGlobal

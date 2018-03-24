@@ -1,0 +1,7 @@
+C:\Dev\Projects\Personal\C#\CS-EclipseData\DataFileParser\bin\Debug\DataFileParser.exe.config
+C:\Dev\Projects\Personal\C#\CS-EclipseData\DataFileParser\bin\Debug\DataFileParser.exe
+C:\Dev\Projects\Personal\C#\CS-EclipseData\DataFileParser\bin\Debug\DataFileParser.pdb
+C:\Dev\Projects\Personal\C#\CS-EclipseData\DataFileParser\obj\Debug\DataFileParser.csprojResolveAssemblyReference.cache
+C:\Dev\Projects\Personal\C#\CS-EclipseData\DataFileParser\obj\Debug\DataFileParser.csproj.CoreCompileInputs.cache
+C:\Dev\Projects\Personal\C#\CS-EclipseData\DataFileParser\obj\Debug\DataFileParser.exe
+C:\Dev\Projects\Personal\C#\CS-EclipseData\DataFileParser\obj\Debug\DataFileParser.pdb

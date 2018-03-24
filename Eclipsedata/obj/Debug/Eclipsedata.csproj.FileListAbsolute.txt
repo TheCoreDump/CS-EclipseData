@@ -4,3 +4,14 @@ C:\Dev\Projects\Eclipsedata\Eclipsedata\bin\Debug\Eclipsedata.pdb
 C:\Dev\Projects\Eclipsedata\Eclipsedata\obj\Debug\Eclipsedata.csprojResolveAssemblyReference.cache
 C:\Dev\Projects\Eclipsedata\Eclipsedata\obj\Debug\Eclipsedata.exe
 C:\Dev\Projects\Eclipsedata\Eclipsedata\obj\Debug\Eclipsedata.pdb
+C:\Dev\Projects\Personal\C#\CS-EclipseData\Eclipsedata\bin\Debug\Eclipsedata.exe.config
+C:\Dev\Projects\Personal\C#\CS-EclipseData\Eclipsedata\bin\Debug\Eclipsedata.exe
+C:\Dev\Projects\Personal\C#\CS-EclipseData\Eclipsedata\bin\Debug\Eclipsedata.pdb
+C:\Dev\Projects\Personal\C#\CS-EclipseData\Eclipsedata\bin\Debug\MathNet.Numerics.dll
+C:\Dev\Projects\Personal\C#\CS-EclipseData\Eclipsedata\bin\Debug\MathNet.Spatial.dll
+C:\Dev\Projects\Personal\C#\CS-EclipseData\Eclipsedata\bin\Debug\MathNet.Numerics.xml
+C:\Dev\Projects\Personal\C#\CS-EclipseData\Eclipsedata\bin\Debug\MathNet.Spatial.xml
+C:\Dev\Projects\Personal\C#\CS-EclipseData\Eclipsedata\obj\Debug\Eclipsedata.csprojResolveAssemblyReference.cache
+C:\Dev\Projects\Personal\C#\CS-EclipseData\Eclipsedata\obj\Debug\Eclipsedata.csproj.CoreCompileInputs.cache
+C:\Dev\Projects\Personal\C#\CS-EclipseData\Eclipsedata\obj\Debug\Eclipsedata.exe
+C:\Dev\Projects\Personal\C#\CS-EclipseData\Eclipsedata\obj\Debug\Eclipsedata.pdb

@@ -6,16 +6,16 @@ namespace Eclipsedata
     {
         public static DateTimeOffset PivotTime = new DateTimeOffset(2017, 08, 21, 16, 24, 40, new TimeSpan(0));
 
-        public const double LATITUDE = 36.824698;
-        public const double LONGITUDE = -87.497039;
-        public const double ELEVATION = 0.160934; //km (528 feet)
-        public const double EARTH_RADIUS = 6370.657; //km
-        public const double MOON_RADIUS = 1737; //km
-        public const double SOLAR_RADIUS = 695700; //km
-        public const double SOLAR_DISTANCE_AU = 1.0115488724729087; //au
-        public const double SOLAR_DISTANCE = 151325557.43; //km
-        public const double SOLAR_ELEVATION_DEG = 58.12768839932917;
-        public const double RELATIVE_AIR_MASS = 1.1768441564628445;
+        public const decimal LATITUDE = 36.824698M;
+        public const decimal LONGITUDE = -87.497039M;
+        public const decimal ELEVATION = 0.160934M; //km (528 feet)
+        public const decimal EARTH_RADIUS = 6370.657M; //km
+        public const decimal MOON_RADIUS = 1737M; //km
+        public const decimal SOLAR_RADIUS = 695700M; //km
+        public const decimal SOLAR_DISTANCE_AU = 1.0115488724729087M; //au
+        public const decimal SOLAR_DISTANCE = 151325557.43M; //km
+        public const decimal SOLAR_ELEVATION_DEG = 58.12768839932917M;
+        public const decimal RELATIVE_AIR_MASS = 1.1768441564628445M;
 
         // km per AU: 149,597,870.7
 

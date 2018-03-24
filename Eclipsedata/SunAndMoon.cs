@@ -8,19 +8,19 @@ namespace Eclipsedata
         private static DateTime _eclipticConjunction = new DateTime(2017, 08, 21, 18, 30, 11);
         private static DateTime _greatestEclipse = new DateTime(2017, 08, 21, 18, 25, 32);
 
-        private static double _sunDegreesPerSecond = 360.0 / 86400.0;
-        private static double _moonDegreesPerSecond = 360.0 / (86400.0 * 27.3);
+        private static decimal _sunDegreesPerSecond = 360M / 86400M;
+        private static decimal _moonDegreesPerSecond = 360M / (86400M * 27.3M);
 
         private Circle _sun;
         private Circle _moon;
 
-        private double a;
-        private double b;
-        private double r0;
+        private decimal a;
+        private decimal b;
+        private decimal r0;
 
-        private double c;
-        private double d;
-        private double r1;
+        private decimal c;
+        private decimal d;
+        private decimal r1;
 
         public SunAndMoon(Circle sun, Circle moon)
         {
@@ -73,9 +73,9 @@ namespace Eclipsedata
         public Point WestPenumbraIntercept { get; set; }
 
 
-        public double UmbralWidth { get; set; }
+        public decimal UmbralWidth { get; set; }
 
-        public double PenumbralWidth { get; set; }
+        public decimal PenumbralWidth { get; set; }
 
 
         public bool IsTotal { get; set; }
@@ -86,8 +86,8 @@ namespace Eclipsedata
             if (SameSize)
                 return;
 
-            double x = ((c * r0) - (a * r1)) / (r0 - r1);
-            double y = ((d * r0) - (b * r1)) / (r0 - r1);
+            decimal x = ((c * r0) - (a * r1)) / (r0 - r1);
+            decimal y = ((d * r0) - (b * r1)) / (r0 - r1);
 
             OuterLineIntersection = new Point(x, y);
         }
@@ -98,58 +98,58 @@ namespace Eclipsedata
 
             if (i != null)
             {
-                double xp = i.X;
-                double yp = i.Y;
+                decimal xp = i.X;
+                decimal yp = i.Y;
 
-                double r0denominator = ((xp - a) * (xp - a)) + ((yp - b) * (yp - b));
-                double r0squared = r0 * r0;
+                decimal r0denominator = ((xp - a) * (xp - a)) + ((yp - b) * (yp - b));
+                decimal r0squared = r0 * r0;
 
 
-                double x1 = ( 
-                                ( (r0squared * (xp - a)) + ( (r0 * (yp - b)) * Math.Sqrt(r0denominator + r0squared ) ) ) 
+                decimal x1 = ( 
+                                ( (r0squared * (xp - a)) + ( (r0 * (yp - b)) * DMath.Sqrt(r0denominator + r0squared ) ) ) 
                                 / 
                                 ( r0denominator ) 
                                 ) + a;
-                double y1 = (
-                                ((r0squared * (yp - b)) - ((r0 * (xp - a)) * Math.Sqrt(r0denominator + r0squared)))
+                decimal y1 = (
+                                ((r0squared * (yp - b)) - ((r0 * (xp - a)) * DMath.Sqrt(r0denominator + r0squared)))
                                 /
                                 (r0denominator)
                                 ) + b;
 
-                double x2 = (
-                                ((r0squared * (xp - a)) - ((r0 * (yp - b)) * Math.Sqrt(r0denominator + r0squared)))
+                decimal x2 = (
+                                ((r0squared * (xp - a)) - ((r0 * (yp - b)) * DMath.Sqrt(r0denominator + r0squared)))
                                 /
                                 (r0denominator)
                                 ) + a;
-                double y2 = (
-                                ((r0squared * (yp - b)) + ((r0 * (xp - a)) * Math.Sqrt(r0denominator + r0squared)))
+                decimal y2 = (
+                                ((r0squared * (yp - b)) + ((r0 * (xp - a)) * DMath.Sqrt(r0denominator + r0squared)))
                                 /
                                 (r0denominator)
                                 ) + b;
 
 
 
-                double r1denominator = ((xp - c) * (xp - c)) + ((yp - d) * (yp - d));
-                double r1squared = r1 * r1;
+                decimal r1denominator = ((xp - c) * (xp - c)) + ((yp - d) * (yp - d));
+                decimal r1squared = r1 * r1;
 
-                double x3 = (
-                                ((r1squared * (xp - c)) + ((r1 * (yp - d)) * Math.Sqrt(r1denominator + r1squared)))
+                decimal x3 = (
+                                ((r1squared * (xp - c)) + ((r1 * (yp - d)) * DMath.Sqrt(r1denominator + r1squared)))
                                 /
                                 (r1denominator)
                                 ) + c;
-                double y3 = (
-                                ((r1squared * (yp - d)) - ((r1 * (xp - c)) * Math.Sqrt(r1denominator + r1squared)))
+                decimal y3 = (
+                                ((r1squared * (yp - d)) - ((r1 * (xp - c)) * DMath.Sqrt(r1denominator + r1squared)))
                                 /
                                 (r1denominator)
                                 ) + d;
 
-                double x4 = (
-                                ((r1squared * (xp - c)) - ((r1 * (yp - d)) * Math.Sqrt(r1denominator + r1squared)))
+                decimal x4 = (
+                                ((r1squared * (xp - c)) - ((r1 * (yp - d)) * DMath.Sqrt(r1denominator + r1squared)))
                                 /
                                 (r1denominator)
                                 ) + c;
-                double y4 = (
-                                ((r1squared * (yp - d)) + ((r1 * (xp - c)) * Math.Sqrt(r1denominator + r1squared)))
+                decimal y4 = (
+                                ((r1squared * (yp - d)) + ((r1 * (xp - c)) * DMath.Sqrt(r1denominator + r1squared)))
                                 /
                                 (r1denominator)
                                 ) + d;
@@ -165,8 +165,8 @@ namespace Eclipsedata
             if (SameSize)
                 return;
 
-            double x = ((c * r0) + (a * r1)) / (r0 + r1);
-            double y = ((d * r0) + (b * r1)) / (r0 + r1);
+            decimal x = ((c * r0) + (a * r1)) / (r0 + r1);
+            decimal y = ((d * r0) + (b * r1)) / (r0 + r1);
 
             InnerLineIntersection = new Point(x, y);
         }
@@ -177,58 +177,58 @@ namespace Eclipsedata
 
             if (i != null)
             {
-                double xp = i.X;
-                double yp = i.Y;
+                decimal xp = i.X;
+                decimal yp = i.Y;
 
-                double r0denominator = ((xp - a) * (xp - a)) + ((yp - b) * (yp - b));
-                double r0squared = r0 * r0;
+                decimal r0denominator = ((xp - a) * (xp - a)) + ((yp - b) * (yp - b));
+                decimal r0squared = r0 * r0;
 
 
-                double x1 = (
-                                ((r0squared * (xp - a)) + ((r0 * (yp - b)) * Math.Sqrt(r0denominator - r0squared)))
+                decimal x1 = (
+                                ((r0squared * (xp - a)) + ((r0 * (yp - b)) * DMath.Sqrt(r0denominator - r0squared)))
                                 /
                                 (r0denominator)
                                 ) + a;
-                double y1 = (
-                                ((r0squared * (yp - b)) - ((r0 * (xp - a)) * Math.Sqrt(r0denominator - r0squared)))
+                decimal y1 = (
+                                ((r0squared * (yp - b)) - ((r0 * (xp - a)) * DMath.Sqrt(r0denominator - r0squared)))
                                 /
                                 (r0denominator)
                                 ) + b;
 
-                double x2 = (
-                                ((r0squared * (xp - a)) - ((r0 * (yp - b)) * Math.Sqrt(r0denominator - r0squared)))
+                decimal x2 = (
+                                ((r0squared * (xp - a)) - ((r0 * (yp - b)) * DMath.Sqrt(r0denominator - r0squared)))
                                 /
                                 (r0denominator)
                                 ) + a;
-                double y2 = (
-                                ((r0squared * (yp - b)) + ((r0 * (xp - a)) * Math.Sqrt(r0denominator - r0squared)))
+                decimal y2 = (
+                                ((r0squared * (yp - b)) + ((r0 * (xp - a)) * DMath.Sqrt(r0denominator - r0squared)))
                                 /
                                 (r0denominator)
                                 ) + b;
 
 
 
-                double r1denominator = ((xp - c) * (xp - c)) + ((yp - d) * (yp - d));
-                double r1squared = r1 * r1;
+                decimal r1denominator = ((xp - c) * (xp - c)) + ((yp - d) * (yp - d));
+                decimal r1squared = r1 * r1;
 
-                double x3 = (
-                                ((r1squared * (xp - c)) + ((r1 * (yp - d)) * Math.Sqrt(r1denominator - r1squared)))
+                decimal x3 = (
+                                ((r1squared * (xp - c)) + ((r1 * (yp - d)) * DMath.Sqrt(r1denominator - r1squared)))
                                 /
                                 (r1denominator)
                                 ) + c;
-                double y3 = (
-                                ((r1squared * (yp - d)) - ((r1 * (xp - c)) * Math.Sqrt(r1denominator - r1squared)))
+                decimal y3 = (
+                                ((r1squared * (yp - d)) - ((r1 * (xp - c)) * DMath.Sqrt(r1denominator - r1squared)))
                                 /
                                 (r1denominator)
                                 ) + d;
 
-                double x4 = (
-                                ((r1squared * (xp - c)) - ((r1 * (yp - d)) * Math.Sqrt(r1denominator - r1squared)))
+                decimal x4 = (
+                                ((r1squared * (xp - c)) - ((r1 * (yp - d)) * DMath.Sqrt(r1denominator - r1squared)))
                                 /
                                 (r1denominator)
                                 ) + c;
-                double y4 = (
-                                ((r1squared * (yp - d)) + ((r1 * (xp - c)) * Math.Sqrt(r1denominator - r1squared)))
+                decimal y4 = (
+                                ((r1squared * (yp - d)) + ((r1 * (xp - c)) * DMath.Sqrt(r1denominator - r1squared)))
                                 /
                                 (r1denominator)
                                 ) + d;
@@ -334,7 +334,7 @@ namespace Eclipsedata
             _moon = null;
         }
 
-        public static SunAndMoon CreateSetup(double sunDiameter, double sunAltitude, double moonDiameter, double moonAltitude, DateTime time)
+        public static SunAndMoon CreateSetup(decimal sunDiameter, decimal sunAltitude, decimal moonDiameter, decimal moonAltitude, DateTime time)
         {
             // Check to make sure the numbers make sense
             if ((time < _greatestEclipse.Subtract(new TimeSpan(5,0,0))) || (_greatestEclipse.Add(new TimeSpan(5, 0, 0)) < time))
@@ -348,10 +348,10 @@ namespace Eclipsedata
 
 
             // Determine the sun's x position
-            double sunX = 0;
+            decimal sunX = 0;
 
             // Determine the moon's x position
-            double moonX = 0;
+            decimal moonX = 0;
 
 
             // Make the sun

@@ -20,9 +20,9 @@ namespace Eclipsedata
 
         public Point P2 { get; set; }
 
-        public double Slope { get; set; }
+        public decimal Slope { get; set; }
 
-        public double Intercept { get; set; }
+        public decimal Intercept { get; set; }
 
         //public double AValue { get; set; }
 
@@ -36,12 +36,12 @@ namespace Eclipsedata
             return string.Format("P1: {0} P2: {1}  Eq: y = {2}x + {3}", P1.ToString(), P2.ToString(), Slope, Intercept);
         }
 
-        public Point ComputeForY(double x)
+        public Point ComputeForY(decimal x)
         {
             return new Point(x, (Slope * x + Intercept));
         }
 
-        public Point ComputeForX(double y)
+        public Point ComputeForX(decimal y)
         {
             return new Point((y - Intercept) / Slope, y);
         }

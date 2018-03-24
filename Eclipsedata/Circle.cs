@@ -4,7 +4,7 @@ namespace Eclipsedata
 {
     public class Circle 
     {
-        public Circle(Point center, double radius)
+        public Circle(Point center, decimal radius)
         {
             Center = center;
             Radius = radius;
@@ -12,12 +12,8 @@ namespace Eclipsedata
 
         public Point Center { get; set; }
 
-        public double Radius { get; set; }
+        public decimal Radius { get; set; }
 
-
-        public override string ToString()
-        {
-            return string.Format("C: {0}  R: {1}", Center.ToString(), Radius);
-        }
+        public override string ToString() => $"C: {Center.ToString()}  R: {Radius}";
     }
 }

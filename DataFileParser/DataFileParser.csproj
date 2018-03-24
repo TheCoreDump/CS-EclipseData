@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5D8A6868-6647-41AB-BE13-4FA84DF6E97F}</ProjectGuid>
+    <ProjectGuid>{A2BDA719-3C14-474F-B36A-9BF98FE6BE22}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Eclipsedata</RootNamespace>
-    <AssemblyName>Eclipsedata</AssemblyName>
+    <RootNamespace>DataFileParser</RootNamespace>
+    <AssemblyName>DataFileParser</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,12 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MathNet.Numerics, Version=3.20.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MathNet.Numerics.3.20.0\lib\net40\MathNet.Numerics.dll</HintPath>
-    </Reference>
-    <Reference Include="MathNet.Spatial, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MathNet.Spatial.0.4.0\lib\net40\MathNet.Spatial.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,21 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DMath.cs" />
-    <Compile Include="Point3d.cs" />
-    <Compile Include="Circle.cs" />
-    <Compile Include="Line.cs" />
-    <Compile Include="Point.cs" />
+    <Compile Include="DataPoint.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sphere.cs" />
-    <Compile Include="SunAndMoon.cs" />
-    <Compile Include="SunMoon3d.cs" />
-    <Compile Include="Vector3d.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
