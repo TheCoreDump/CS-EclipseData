@@ -8,40 +8,40 @@ namespace DataFileParser
         {
             string[] parts = rawData.Split(',');
 
-            JulianDate = Decimal.Parse(parts[0], System.Globalization.NumberStyles.Float);
+            JulianDate = Double.Parse(parts[0]);
             UTCDate = DateTime.Parse(parts[1]);
-            X = Decimal.Parse(parts[2], System.Globalization.NumberStyles.Float);
-            Y = Decimal.Parse(parts[3], System.Globalization.NumberStyles.Float);
-            Z = Decimal.Parse(parts[4], System.Globalization.NumberStyles.Float);
-            vX = Decimal.Parse(parts[5], System.Globalization.NumberStyles.Float);
-            vY = Decimal.Parse(parts[6], System.Globalization.NumberStyles.Float);
-            vZ = Decimal.Parse(parts[7], System.Globalization.NumberStyles.Float);
-            LT = Decimal.Parse(parts[8], System.Globalization.NumberStyles.Float);
-            Range = Decimal.Parse(parts[9], System.Globalization.NumberStyles.Float);
-            RangeRate = Decimal.Parse(parts[10], System.Globalization.NumberStyles.Float);
+            X = Double.Parse(parts[2]);
+            Y = Double.Parse(parts[3]);
+            Z = Double.Parse(parts[4]);
+            vX = Double.Parse(parts[5]);
+            vY = Double.Parse(parts[6]);
+            vZ = Double.Parse(parts[7]);
+            LT = Double.Parse(parts[8]);
+            Range = Double.Parse(parts[9]);
+            RangeRate = Double.Parse(parts[10]);
         }
 
-        public decimal JulianDate { get; set; }
+        public double JulianDate { get; set; }
 
         public DateTime UTCDate { get; set; }
 
-        public decimal X { get; set; }
+        public double X { get; set; }
 
-        public decimal Y { get; set; }
+        public double Y { get; set; }
 
-        public decimal Z { get; set; }
+        public double Z { get; set; }
 
-        public decimal vX { get; set; }
+        public double vX { get; set; }
 
-        public decimal vY { get; set; }
+        public double vY { get; set; }
 
-        public decimal vZ { get; set; }
+        public double vZ { get; set; }
 
-        public decimal LT { get; set; }
+        public double LT { get; set; }
 
-        public decimal Range { get; set; }
+        public double Range { get; set; }
 
-        public decimal RangeRate { get; set; }
+        public double RangeRate { get; set; }
 
         public override string ToString() => $"DateTime: {UTCDate.ToString("yyyy-MM-dd HH:mm:ss")} Position: <{X},{Y},{Z}>  Velocity: <{vX},{vY},{vZ}>  LT: {LT} Range: {Range} RangeRate: {RangeRate} Julian Date: {JulianDate}";
 

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eclipsedata", "Eclipsedata\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataFileParser", "DataFileParser\DataFileParser.csproj", "{A2BDA719-3C14-474F-B36A-9BF98FE6BE22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunrisePlot", "SunrisePlot\SunrisePlot.csproj", "{82ABAFCF-9643-4BBC-9D4F-20A02975A948}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A2BDA719-3C14-474F-B36A-9BF98FE6BE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2BDA719-3C14-474F-B36A-9BF98FE6BE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2BDA719-3C14-474F-B36A-9BF98FE6BE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82ABAFCF-9643-4BBC-9D4F-20A02975A948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82ABAFCF-9643-4BBC-9D4F-20A02975A948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82ABAFCF-9643-4BBC-9D4F-20A02975A948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82ABAFCF-9643-4BBC-9D4F-20A02975A948}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
